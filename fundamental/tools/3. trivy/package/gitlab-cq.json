@@ -1,0 +1,887 @@
+[
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-28391 - busybox - 1.34.1-r3 - busybox: remote attackers may execute arbitrary code if netstat is used",
+      "fingerprint": "e9dc6c3490f235494fac7801ae47e509b4c0f704",
+      "content": "BusyBox through 1.35.0 allows remote attackers to execute arbitrary code if netstat is used to print a DNS PTR record's value to a VT compatible terminal. Alternatively, the attacker could choose to change the terminal's colors.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-22822 - expat - 2.4.1-r0 - expat: Integer overflow in addBinding in xmlparse.c",
+      "fingerprint": "7560ab21f95e514db82eb48da84972c20b7d440c",
+      "content": "addBinding in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "severity": "critical",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-22823 - expat - 2.4.1-r0 - expat: Integer overflow in build_model in xmlparse.c",
+      "fingerprint": "2c5bdce1a7c4535f35eba8b1c4316ac456aa12f6",
+      "content": "build_model in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "severity": "critical",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-22824 - expat - 2.4.1-r0 - expat: Integer overflow in defineAttribute in xmlparse.c",
+      "fingerprint": "fed69db772bb0c4cb00fabebd3ef99e9009246a4",
+      "content": "defineAttribute in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "severity": "critical",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-23852 - expat - 2.4.1-r0 - expat: Integer overflow in function XML_GetBuffer",
+      "fingerprint": "69fb73f1c9f2910ca893eff76268da92142993b0",
+      "content": "Expat (aka libexpat) before 2.4.4 has a signed integer overflow in XML_GetBuffer, for configurations with a nonzero XML_CONTEXT_BYTES.",
+      "severity": "critical",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-25235 - expat - 2.4.1-r0 - expat: Malformed 2- and 3-byte UTF-8 sequences can lead to arbitrary code execution",
+      "fingerprint": "24d2f772e0f0a8fcb596bcfe4901e22f25a6f3e6",
+      "content": "xmltok_impl.c in Expat (aka libexpat) before 2.4.5 lacks certain validation of encoding, such as checks for whether a UTF-8 character is valid in a certain context.",
+      "severity": "critical",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-25236 - expat - 2.4.1-r0 - expat: Namespace-separator characters in \"xmlns[:prefix]\" attribute values can lead to arbitrary code execution",
+      "fingerprint": "1835969e0a91b66951c6a95d3271e1af2a3e652c",
+      "content": "xmlparse.c in Expat (aka libexpat) before 2.4.5 allows attackers to insert namespace-separator characters into namespace URIs.",
+      "severity": "critical",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-25315 - expat - 2.4.1-r0 - expat: Integer overflow in storeRawNames()",
+      "fingerprint": "4a6c38b3f40cd7536490f3e16e0dd346cd3f2f5c",
+      "content": "In Expat (aka libexpat) before 2.4.5, there is an integer overflow in storeRawNames.",
+      "severity": "critical",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2021-45960 - expat - 2.4.1-r0 - expat: Large number of prefixed XML attributes on a single tag can crash libexpat",
+      "fingerprint": "db49c569491c712513c2ef6ef1af0567eb68f622",
+      "content": "In Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2021-46143 - expat - 2.4.1-r0 - expat: Integer overflow in doProlog in xmlparse.c",
+      "fingerprint": "4038533aae03b080a44d80b1a4fe24cc8563a4fb",
+      "content": "In doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-22825 - expat - 2.4.1-r0 - expat: Integer overflow in lookup in xmlparse.c",
+      "fingerprint": "623716ace18d6f00223593938a7d293aabfb666c",
+      "content": "lookup in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-22826 - expat - 2.4.1-r0 - expat: Integer overflow in nextScaffoldPart in xmlparse.c",
+      "fingerprint": "1ac38497ce122bbda6d0332a33f208489dd91785",
+      "content": "nextScaffoldPart in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-22827 - expat - 2.4.1-r0 - expat: Integer overflow in storeAtts in xmlparse.c",
+      "fingerprint": "0baa11b3f11489ee2093bb0bb63b79e219243e46",
+      "content": "storeAtts in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-23990 - expat - 2.4.1-r0 - expat: integer overflow in the doProlog function",
+      "fingerprint": "817f99f0a6224ad4f10b5a5ef0db249e7cfcca0c",
+      "content": "Expat (aka libexpat) before 2.4.4 has an integer overflow in the doProlog function.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-25314 - expat - 2.4.1-r0 - expat: Integer overflow in copyString()",
+      "fingerprint": "65b39215bffef9e9f4b3c137c26478968be4ba19",
+      "content": "In Expat (aka libexpat) before 2.4.5, there is an integer overflow in copyString.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-40674 - expat - 2.4.1-r0 - expat: a use-after-free in the doContent function in xmlparse.c",
+      "fingerprint": "9eaf6c318d04d6b016f6fbbba6524bec742ade04",
+      "content": "libexpat before 2.4.9 has a use-after-free in the doContent function in xmlparse.c.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-43680 - expat - 2.4.1-r0 - expat: use-after free caused by overeager destruction of a shared DTD in XML_ExternalEntityParserCreate",
+      "fingerprint": "f19f48cc6ec31d201f6af1b7b128dee8ac9558c9",
+      "content": "In libexpat through 2.4.9, there is a use-after free caused by overeager destruction of a shared DTD in XML_ExternalEntityParserCreate in out-of-memory situations.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-25313 - expat - 2.4.1-r0 - expat: Stack exhaustion in doctype parsing",
+      "fingerprint": "70c766dbca6a2e0e196117acbc0a0470dbaff38c",
+      "content": "In Expat (aka libexpat) before 2.4.5, an attacker can trigger stack exhaustion in build_model via a large nesting depth in the DTD element.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-42898 - krb5-libs - 1.19.2-r4 - krb5: integer overflow vulnerabilities in PAC parsing",
+      "fingerprint": "2bc3b3a557fffab1d9fbc321bc3955554e87249e",
+      "content": "PAC parsing in MIT Kerberos 5 (aka krb5) before 1.19.4 and 1.20.x before 1.20.1 has integer overflows that may lead to remote code execution (in KDC, kadmind, or a GSS or Kerberos application server) on 32-bit platforms (which have a resultant heap-based buffer overflow), and cause a denial of service on other platforms. This occurs in krb5_pac_parse in lib/krb5/krb/pac.c. Heimdal before 7.7.1 has \"a similar bug.\"",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2021-37750 - krb5-libs - 1.19.2-r4 - krb5: NULL pointer dereference in process_tgs_req() in kdc/do_tgs_req.c via a FAST inner body that lacks server field",
+      "fingerprint": "cfd4b81e9558bf682f879a333a09929e23f23c4d",
+      "content": "The Key Distribution Center (KDC) in MIT Kerberos 5 (aka krb5) before 1.18.5 and 1.19.x before 1.19.3 has a NULL pointer dereference in kdc/do_tgs_req.c via a FAST inner body that lacks a server field.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-1304 - libcom_err - 1.46.4-r0 - e2fsprogs: out-of-bounds read/write via crafted filesystem",
+      "fingerprint": "59e2d12e418d1c6532f27e004fc387f6562bb49a",
+      "content": "An out-of-bounds read/write vulnerability was found in e2fsprogs 1.46.5. This issue leads to a segmentation fault and possibly arbitrary code execution via a specially crafted filesystem.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-0778 - libcrypto1.1 - 1.1.1l-r7 - openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates",
+      "fingerprint": "431c1164b5efca457d2918ec89e2ccf5cbdcf552",
+      "content": "The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Thus vulnerable situations include: - TLS clients consuming server certificates - TLS servers consuming client certificates - Hosting providers taking certificates or private keys from customers - Certificate authorities parsing certification requests from subscribers - Anything else which parses ASN.1 elliptic curve parameters Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue. In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc).",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-4450 - libcrypto1.1 - 1.1.1l-r7 - openssl: double free after calling PEM_read_bio_ex",
+      "fingerprint": "c1a7f8b524fb1931332c1fd86356bd3afe79bdb9",
+      "content": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and\ndecodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data.\nIf the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are\npopulated with pointers to buffers containing the relevant decoded data. The\ncaller is responsible for freeing those buffers. It is possible to construct a\nPEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex()\nwill return a failure code but will populate the header argument with a pointer\nto a buffer that has already been freed. If the caller also frees this buffer\nthen a double free will occur. This will most likely lead to a crash. This\ncould be exploited by an attacker who has the ability to supply malicious PEM\nfiles for parsing to achieve a denial of service attack.\n\nThe functions PEM_read_bio() and PEM_read() are simple wrappers around\nPEM_read_bio_ex() and therefore these functions are also directly affected.\n\nThese functions are also called indirectly by a number of other OpenSSL\nfunctions including PEM_X509_INFO_read_bio_ex() and\nSSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal\nuses of these functions are not vulnerable because the caller does not free the\nheader argument if PEM_read_bio_ex() returns a failure code. These locations\ninclude the PEM_read_bio_TYPE() functions as well as the decoders introduced in\nOpenSSL 3.0.\n\nThe OpenSSL asn1parse command line application is also impacted by this issue.\n\n\n",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-0215 - libcrypto1.1 - 1.1.1l-r7 - openssl: use-after-free following BIO_new_NDEF",
+      "fingerprint": "dbf28c970c856add68ed5a206e1c3fcec74a5d6e",
+      "content": "The public API function BIO_new_NDEF is a helper function used for streaming\nASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the\nSMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by\nend user applications.\n\nThe function receives a BIO from the caller, prepends a new BIO_f_asn1 filter\nBIO onto the front of it to form a BIO chain, and then returns the new head of\nthe BIO chain to the caller. Under certain conditions, for example if a CMS\nrecipient public key is invalid, the new filter BIO is freed and the function\nreturns a NULL result indicating a failure. However, in this case, the BIO chain\nis not properly cleaned up and the BIO passed by the caller still retains\ninternal pointers to the previously freed filter BIO. If the caller then goes on\nto call BIO_pop() on the BIO then a use-after-free will occur. This will most\nlikely result in a crash.\n\n\n\nThis scenario occurs directly in the internal function B64_write_ASN1() which\nmay cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on\nthe BIO. This internal function is in turn called by the public API functions\nPEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream,\nSMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7.\n\nOther public API functions that may be impacted by this include\ni2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and\ni2d_PKCS7_bio_stream.\n\nThe OpenSSL cms and smime command line applications are similarly affected.\n\n\n\n",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-0286 - libcrypto1.1 - 1.1.1l-r7 - openssl: X.400 address type confusion in X.509 GeneralName",
+      "fingerprint": "fd956d63bf380740d1ba533eeb28408e4f2002d0",
+      "content": "There is a type confusion vulnerability relating to X.400 address processing\ninside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but\nthe public structure definition for GENERAL_NAME incorrectly specified the type\nof the x400Address field as ASN1_TYPE. This field is subsequently interpreted by\nthe OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an\nASN1_STRING.\n\nWhen CRL checking is enabled (i.e. the application sets the\nX509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass\narbitrary pointers to a memcmp call, enabling them to read memory contents or\nenact a denial of service. In most cases, the attack requires the attacker to\nprovide both the certificate chain and CRL, neither of which need to have a\nvalid signature. If the attacker only controls one of these inputs, the other\ninput must already contain an X.400 address as a CRL distribution point, which\nis uncommon. As such, this vulnerability is most likely to only affect\napplications which have implemented their own functionality for retrieving CRLs\nover a network.\n\n",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-0464 - libcrypto1.1 - 1.1.1l-r7 - openssl: Denial of service by excessive resource usage in verifying X509 policy constraints",
+      "fingerprint": "152ef11fd43a84ec48125c8af824d4e1fdede135",
+      "content": "A security vulnerability has been identified in all supported versions\n\nof OpenSSL related to the verification of X.509 certificate chains\nthat include policy constraints.  Attackers may be able to exploit this\nvulnerability by creating a malicious certificate chain that triggers\nexponential use of computational resources, leading to a denial-of-service\n(DoS) attack on affected systems.\n\nPolicy processing is disabled by default but can be enabled by passing\nthe `-policy' argument to the command line utilities or by calling the\n`X509_VERIFY_PARAM_set1_policies()' function.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-2097 - libcrypto1.1 - 1.1.1l-r7 - openssl: AES OCB fails to encrypt some bytes",
+      "fingerprint": "9e9a81c36ae5e28414b06f3adddae53814bbf733",
+      "content": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p).",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-4304 - libcrypto1.1 - 1.1.1l-r7 - openssl: timing attack in RSA Decryption implementation",
+      "fingerprint": "87e32793a5b783560f6401f64ec396a851e3738c",
+      "content": "A timing based side channel exists in the OpenSSL RSA Decryption implementation\nwhich could be sufficient to recover a plaintext across a network in a\nBleichenbacher style attack. To achieve a successful decryption an attacker\nwould have to be able to send a very large number of trial messages for\ndecryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5,\nRSA-OEAP and RSASVE.\n\nFor example, in a TLS connection, RSA is commonly used by a client to send an\nencrypted pre-master secret to the server. An attacker that had observed a\ngenuine connection between a client and a server could use this flaw to send\ntrial messages to the server and record the time taken to process them. After a\nsufficiently large number of messages the attacker could recover the pre-master\nsecret used for the original connection and thus be able to decrypt the\napplication data sent over that connection.\n\n",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-0465 - libcrypto1.1 - 1.1.1l-r7 - openssl: Invalid certificate policies in leaf certificates are silently ignored",
+      "fingerprint": "a65fa222f074fdc7cebf4ddd59492eea5e8285d7",
+      "content": "Applications that use a non-default option when verifying certificates may be\nvulnerable to an attack from a malicious CA to circumvent certain checks.\n\nInvalid certificate policies in leaf certificates are silently ignored by\nOpenSSL and other certificate policy checks are skipped for that certificate.\nA malicious CA could use this to deliberately assert invalid certificate policies\nin order to circumvent policy checking on the certificate altogether.\n\nPolicy processing is disabled by default but can be enabled by passing\nthe `-policy' argument to the command line utilities or by calling the\n`X509_VERIFY_PARAM_set1_policies()' function.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-2650 - libcrypto1.1 - 1.1.1l-r7 - openssl: Possible DoS translating ASN.1 object identifiers",
+      "fingerprint": "e06fab196c69638c71f8b8601a5f1d08df861b67",
+      "content": "Issue summary: Processing some specially crafted ASN.1 object identifiers or\ndata containing them may be very slow.\n\nImpact summary: Applications that use OBJ_obj2txt() directly, or use any of\nthe OpenSSL subsystems OCSP, PKCS7/SMIME, CMS, CMP/CRMF or TS with no message\nsize limit may experience notable to very long delays when processing those\nmessages, which may lead to a Denial of Service.\n\nAn OBJECT IDENTIFIER is composed of a series of numbers - sub-identifiers -\nmost of which have no size limit.  OBJ_obj2txt() may be used to translate\nan ASN.1 OBJECT IDENTIFIER given in DER encoding form (using the OpenSSL\ntype ASN1_OBJECT) to its canonical numeric text form, which are the\nsub-identifiers of the OBJECT IDENTIFIER in decimal form, separated by\nperiods.\n\nWhen one of the sub-identifiers in the OBJECT IDENTIFIER is very large\n(these are sizes that are seen as absurdly large, taking up tens or hundreds\nof KiBs), the translation to a decimal number in text may take a very long\ntime.  The time complexity is O(n^2) with 'n' being the size of the\nsub-identifiers in bytes (*).\n\nWith OpenSSL 3.0, support to fetch cryptographic algorithms using names /\nidentifiers in string form was introduced.  This includes using OBJECT\nIDENTIFIERs in canonical numeric text form as identifiers for fetching\nalgorithms.\n\nSuch OBJECT IDENTIFIERs may be received through the ASN.1 structure\nAlgorithmIdentifier, which is commonly used in multiple protocols to specify\nwhat cryptographic algorithm should be used to sign or verify, encrypt or\ndecrypt, or digest passed data.\n\nApplications that call OBJ_obj2txt() directly with untrusted data are\naffected, with any version of OpenSSL.  If the use is for the mere purpose\nof display, the severity is considered low.\n\nIn OpenSSL 3.0 and newer, this affects the subsystems OCSP, PKCS7/SMIME,\nCMS, CMP/CRMF or TS.  It also impacts anything that processes X.509\ncertificates, including simple things like verifying its signature.\n\nThe impact on TLS is relatively low, because all versions of OpenSSL have a\n100KiB limit on the peer's certificate chain.  Additionally, this only\nimpacts clients, or servers that have explicitly enabled client\nauthentication.\n\nIn OpenSSL 1.1.1 and 1.0.2, this only affects displaying diverse objects,\nsuch as X.509 certificates.  This is assumed to not happen in such a way\nthat it would cause a Denial of Service, so these versions are considered\nnot affected by this issue in such a way that it would be cause for concern,\nand the severity is therefore considered low.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-3446 - libcrypto1.1 - 1.1.1l-r7 - openssl: Excessive time spent checking DH keys and parameters",
+      "fingerprint": "b75db08b9b66ba6a5df8f403ddc8e62b56abad21",
+      "content": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. One of those\nchecks confirms that the modulus ('p' parameter) is not too large. Trying to use\na very large modulus is slow and OpenSSL will not normally use a modulus which\nis over 10,000 bits in length.\n\nHowever the DH_check() function checks numerous aspects of the key or parameters\nthat have been supplied. Some of those checks use the supplied modulus value\neven if it has already been found to be too large.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulernable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the '-check' option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-3817 - libcrypto1.1 - 1.1.1l-r7 - OpenSSL: Excessive time spent checking DH q parameter value",
+      "fingerprint": "3b58247de5ff82f1cdef0d994d2eef28f51eb128",
+      "content": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. After fixing\nCVE-2023-3446 it was discovered that a large q parameter value can also trigger\nan overly long computation during some of these checks. A correct q value,\nif present, cannot be larger than the modulus p parameter, thus it is\nunnecessary to perform these checks if q is larger than p.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulnerable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the \"-check\" option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-5678 - libcrypto1.1 - 1.1.1l-r7 - openssl: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow",
+      "fingerprint": "803774a544bced494506a1cb314072c3228c256f",
+      "content": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-0778 - libretls - 3.3.4-r2 - openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates",
+      "fingerprint": "d93648f026555723b5a045d9b5b84f8c6fbca174",
+      "content": "The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Thus vulnerable situations include: - TLS clients consuming server certificates - TLS servers consuming client certificates - Hosting providers taking certificates or private keys from customers - Certificate authorities parsing certification requests from subscribers - Anything else which parses ASN.1 elliptic curve parameters Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue. In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc).",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-0778 - libssl1.1 - 1.1.1l-r7 - openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates",
+      "fingerprint": "4cf3f41e5e2948a920ab3b26a6ff9d55df36f66c",
+      "content": "The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Thus vulnerable situations include: - TLS clients consuming server certificates - TLS servers consuming client certificates - Hosting providers taking certificates or private keys from customers - Certificate authorities parsing certification requests from subscribers - Anything else which parses ASN.1 elliptic curve parameters Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue. In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc).",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-4450 - libssl1.1 - 1.1.1l-r7 - openssl: double free after calling PEM_read_bio_ex",
+      "fingerprint": "ea2f4463f8cab3ecbd9b202ec6453b343d786687",
+      "content": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and\ndecodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data.\nIf the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are\npopulated with pointers to buffers containing the relevant decoded data. The\ncaller is responsible for freeing those buffers. It is possible to construct a\nPEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex()\nwill return a failure code but will populate the header argument with a pointer\nto a buffer that has already been freed. If the caller also frees this buffer\nthen a double free will occur. This will most likely lead to a crash. This\ncould be exploited by an attacker who has the ability to supply malicious PEM\nfiles for parsing to achieve a denial of service attack.\n\nThe functions PEM_read_bio() and PEM_read() are simple wrappers around\nPEM_read_bio_ex() and therefore these functions are also directly affected.\n\nThese functions are also called indirectly by a number of other OpenSSL\nfunctions including PEM_X509_INFO_read_bio_ex() and\nSSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal\nuses of these functions are not vulnerable because the caller does not free the\nheader argument if PEM_read_bio_ex() returns a failure code. These locations\ninclude the PEM_read_bio_TYPE() functions as well as the decoders introduced in\nOpenSSL 3.0.\n\nThe OpenSSL asn1parse command line application is also impacted by this issue.\n\n\n",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-0215 - libssl1.1 - 1.1.1l-r7 - openssl: use-after-free following BIO_new_NDEF",
+      "fingerprint": "ff85a270ed7b4ca6ab101f3ede7b6e76054099d1",
+      "content": "The public API function BIO_new_NDEF is a helper function used for streaming\nASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the\nSMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by\nend user applications.\n\nThe function receives a BIO from the caller, prepends a new BIO_f_asn1 filter\nBIO onto the front of it to form a BIO chain, and then returns the new head of\nthe BIO chain to the caller. Under certain conditions, for example if a CMS\nrecipient public key is invalid, the new filter BIO is freed and the function\nreturns a NULL result indicating a failure. However, in this case, the BIO chain\nis not properly cleaned up and the BIO passed by the caller still retains\ninternal pointers to the previously freed filter BIO. If the caller then goes on\nto call BIO_pop() on the BIO then a use-after-free will occur. This will most\nlikely result in a crash.\n\n\n\nThis scenario occurs directly in the internal function B64_write_ASN1() which\nmay cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on\nthe BIO. This internal function is in turn called by the public API functions\nPEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream,\nSMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7.\n\nOther public API functions that may be impacted by this include\ni2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and\ni2d_PKCS7_bio_stream.\n\nThe OpenSSL cms and smime command line applications are similarly affected.\n\n\n\n",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-0286 - libssl1.1 - 1.1.1l-r7 - openssl: X.400 address type confusion in X.509 GeneralName",
+      "fingerprint": "c031ab2cdd6a585c9c3a83a1fd5090d86d8c0942",
+      "content": "There is a type confusion vulnerability relating to X.400 address processing\ninside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but\nthe public structure definition for GENERAL_NAME incorrectly specified the type\nof the x400Address field as ASN1_TYPE. This field is subsequently interpreted by\nthe OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an\nASN1_STRING.\n\nWhen CRL checking is enabled (i.e. the application sets the\nX509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass\narbitrary pointers to a memcmp call, enabling them to read memory contents or\nenact a denial of service. In most cases, the attack requires the attacker to\nprovide both the certificate chain and CRL, neither of which need to have a\nvalid signature. If the attacker only controls one of these inputs, the other\ninput must already contain an X.400 address as a CRL distribution point, which\nis uncommon. As such, this vulnerability is most likely to only affect\napplications which have implemented their own functionality for retrieving CRLs\nover a network.\n\n",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-0464 - libssl1.1 - 1.1.1l-r7 - openssl: Denial of service by excessive resource usage in verifying X509 policy constraints",
+      "fingerprint": "4d7b2bef2f5cc260467cf1f16c7be8ec432e6e14",
+      "content": "A security vulnerability has been identified in all supported versions\n\nof OpenSSL related to the verification of X.509 certificate chains\nthat include policy constraints.  Attackers may be able to exploit this\nvulnerability by creating a malicious certificate chain that triggers\nexponential use of computational resources, leading to a denial-of-service\n(DoS) attack on affected systems.\n\nPolicy processing is disabled by default but can be enabled by passing\nthe `-policy' argument to the command line utilities or by calling the\n`X509_VERIFY_PARAM_set1_policies()' function.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-2097 - libssl1.1 - 1.1.1l-r7 - openssl: AES OCB fails to encrypt some bytes",
+      "fingerprint": "79e20f39f8adb6473c1de416830f438e2f781060",
+      "content": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p).",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-4304 - libssl1.1 - 1.1.1l-r7 - openssl: timing attack in RSA Decryption implementation",
+      "fingerprint": "ec0ae0fa0da1245069016f21d6bfac9dcc651679",
+      "content": "A timing based side channel exists in the OpenSSL RSA Decryption implementation\nwhich could be sufficient to recover a plaintext across a network in a\nBleichenbacher style attack. To achieve a successful decryption an attacker\nwould have to be able to send a very large number of trial messages for\ndecryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5,\nRSA-OEAP and RSASVE.\n\nFor example, in a TLS connection, RSA is commonly used by a client to send an\nencrypted pre-master secret to the server. An attacker that had observed a\ngenuine connection between a client and a server could use this flaw to send\ntrial messages to the server and record the time taken to process them. After a\nsufficiently large number of messages the attacker could recover the pre-master\nsecret used for the original connection and thus be able to decrypt the\napplication data sent over that connection.\n\n",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-0465 - libssl1.1 - 1.1.1l-r7 - openssl: Invalid certificate policies in leaf certificates are silently ignored",
+      "fingerprint": "7d2664946b2b0349242a6ac4e3b5c79d1f3b2aaa",
+      "content": "Applications that use a non-default option when verifying certificates may be\nvulnerable to an attack from a malicious CA to circumvent certain checks.\n\nInvalid certificate policies in leaf certificates are silently ignored by\nOpenSSL and other certificate policy checks are skipped for that certificate.\nA malicious CA could use this to deliberately assert invalid certificate policies\nin order to circumvent policy checking on the certificate altogether.\n\nPolicy processing is disabled by default but can be enabled by passing\nthe `-policy' argument to the command line utilities or by calling the\n`X509_VERIFY_PARAM_set1_policies()' function.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-2650 - libssl1.1 - 1.1.1l-r7 - openssl: Possible DoS translating ASN.1 object identifiers",
+      "fingerprint": "1de6a7ed658f4646c568b03096289c90714ab802",
+      "content": "Issue summary: Processing some specially crafted ASN.1 object identifiers or\ndata containing them may be very slow.\n\nImpact summary: Applications that use OBJ_obj2txt() directly, or use any of\nthe OpenSSL subsystems OCSP, PKCS7/SMIME, CMS, CMP/CRMF or TS with no message\nsize limit may experience notable to very long delays when processing those\nmessages, which may lead to a Denial of Service.\n\nAn OBJECT IDENTIFIER is composed of a series of numbers - sub-identifiers -\nmost of which have no size limit.  OBJ_obj2txt() may be used to translate\nan ASN.1 OBJECT IDENTIFIER given in DER encoding form (using the OpenSSL\ntype ASN1_OBJECT) to its canonical numeric text form, which are the\nsub-identifiers of the OBJECT IDENTIFIER in decimal form, separated by\nperiods.\n\nWhen one of the sub-identifiers in the OBJECT IDENTIFIER is very large\n(these are sizes that are seen as absurdly large, taking up tens or hundreds\nof KiBs), the translation to a decimal number in text may take a very long\ntime.  The time complexity is O(n^2) with 'n' being the size of the\nsub-identifiers in bytes (*).\n\nWith OpenSSL 3.0, support to fetch cryptographic algorithms using names /\nidentifiers in string form was introduced.  This includes using OBJECT\nIDENTIFIERs in canonical numeric text form as identifiers for fetching\nalgorithms.\n\nSuch OBJECT IDENTIFIERs may be received through the ASN.1 structure\nAlgorithmIdentifier, which is commonly used in multiple protocols to specify\nwhat cryptographic algorithm should be used to sign or verify, encrypt or\ndecrypt, or digest passed data.\n\nApplications that call OBJ_obj2txt() directly with untrusted data are\naffected, with any version of OpenSSL.  If the use is for the mere purpose\nof display, the severity is considered low.\n\nIn OpenSSL 3.0 and newer, this affects the subsystems OCSP, PKCS7/SMIME,\nCMS, CMP/CRMF or TS.  It also impacts anything that processes X.509\ncertificates, including simple things like verifying its signature.\n\nThe impact on TLS is relatively low, because all versions of OpenSSL have a\n100KiB limit on the peer's certificate chain.  Additionally, this only\nimpacts clients, or servers that have explicitly enabled client\nauthentication.\n\nIn OpenSSL 1.1.1 and 1.0.2, this only affects displaying diverse objects,\nsuch as X.509 certificates.  This is assumed to not happen in such a way\nthat it would cause a Denial of Service, so these versions are considered\nnot affected by this issue in such a way that it would be cause for concern,\nand the severity is therefore considered low.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-3446 - libssl1.1 - 1.1.1l-r7 - openssl: Excessive time spent checking DH keys and parameters",
+      "fingerprint": "79b906e062bdeb7be86d0cb39e9056621f7ee2d3",
+      "content": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. One of those\nchecks confirms that the modulus ('p' parameter) is not too large. Trying to use\na very large modulus is slow and OpenSSL will not normally use a modulus which\nis over 10,000 bits in length.\n\nHowever the DH_check() function checks numerous aspects of the key or parameters\nthat have been supplied. Some of those checks use the supplied modulus value\neven if it has already been found to be too large.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulernable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the '-check' option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-3817 - libssl1.1 - 1.1.1l-r7 - OpenSSL: Excessive time spent checking DH q parameter value",
+      "fingerprint": "832486e86e61b3f86942aa0ca437e3879b6ad13a",
+      "content": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. After fixing\nCVE-2023-3446 it was discovered that a large q parameter value can also trigger\nan overly long computation during some of these checks. A correct q value,\nif present, cannot be larger than the modulus p parameter, thus it is\nunnecessary to perform these checks if q is larger than p.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulnerable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the \"-check\" option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-5678 - libssl1.1 - 1.1.1l-r7 - openssl: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow",
+      "fingerprint": "6aaa8396d1db270a09a3a1bf02a210a7e545178d",
+      "content": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+      "severity": "minor",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2021-46828 - libtirpc - 1.3.2-r0 - libtirpc: DoS vulnerability with lots of connections",
+      "fingerprint": "79082d635710ea699f675a5a811fccf571b4e5fe",
+      "content": "In libtirpc before 1.3.3rc1, remote attackers could exhaust the file descriptors of a process that uses libtirpc because idle TCP connections are mishandled. This can, in turn, lead to an svc_run infinite loop without accepting new connections.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2021-46828 - libtirpc-conf - 1.3.2-r0 - libtirpc: DoS vulnerability with lots of connections",
+      "fingerprint": "f81cddb98e567002d3383b6ac6ecd7d285b16f15",
+      "content": "In libtirpc before 1.3.3rc1, remote attackers could exhaust the file descriptors of a process that uses libtirpc because idle TCP connections are mishandled. This can, in turn, lead to an svc_run infinite loop without accepting new connections.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-29458 - ncurses-libs - 6.3_p20211120-r0 - ncurses: segfaulting OOB read",
+      "fingerprint": "2512ef1381396628afe3b15463d98ad71573e76b",
+      "content": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-29491 - ncurses-libs - 6.3_p20211120-r0 - ncurses: Local users can trigger security-relevant memory corruption via malformed data",
+      "fingerprint": "547d710921a543bc0176a0690bd48bb339451ec8",
+      "content": "ncurses before 6.4 20230408, when used by a setuid application, allows local users to trigger security-relevant memory corruption via malformed data in a terminfo database file that is found in $HOME/.terminfo or reached via the TERMINFO or TERM environment variable.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-29458 - ncurses-terminfo-base - 6.3_p20211120-r0 - ncurses: segfaulting OOB read",
+      "fingerprint": "57059b74669b917bf1e6157575f40fe38644949b",
+      "content": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-29491 - ncurses-terminfo-base - 6.3_p20211120-r0 - ncurses: Local users can trigger security-relevant memory corruption via malformed data",
+      "fingerprint": "19807082abd5f9479ca2e8514817efb77b95f0bf",
+      "content": "ncurses before 6.4 20230408, when used by a setuid application, allows local users to trigger security-relevant memory corruption via malformed data in a terminfo database file that is found in $HOME/.terminfo or reached via the TERMINFO or TERM environment variable.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-28391 - ssl_client - 1.34.1-r3 - busybox: remote attackers may execute arbitrary code if netstat is used",
+      "fingerprint": "cbcb35c4b95e422ebeb0ab1e9076e4b20b7b865d",
+      "content": "BusyBox through 1.35.0 allows remote attackers to execute arbitrary code if netstat is used to print a DNS PTR record's value to a VT compatible terminal. Alternatively, the attacker could choose to change the terminal's colors.",
+      "severity": "major",
+      "location": {
+        "path": "pack (alpine 3.15.0)",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2023-5752 - pip - 21.2.4 - pip: Mercurial configuration injectable in repo revision when installing via pip",
+      "fingerprint": "f84fa8a5c42bfe116126a73648d0e7a2a4cf14f7",
+      "content": "When installing a package from a Mercurial VCS URL  (ie \"pip install \nhg+...\") with pip prior to v23.3, the specified Mercurial revision could\n be used to inject arbitrary configuration options to the \"hg clone\" \ncall (ie \"--config\"). Controlling the Mercurial configuration can modify\n how and which repository is installed. This vulnerability does not \naffect users who aren't installing from Mercurial.\n",
+      "severity": "minor",
+      "location": {
+        "path": "Python",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-42969 - py - 1.11.0 - py: ReDoS in py library when used with subversion",
+      "fingerprint": "7bf071f11d8695eefda16213374205f57f954a8e",
+      "content": "The py library through 1.11.0 for Python allows remote attackers to conduct a ReDoS (Regular expression Denial of Service) attack via a Subversion repository with crafted info data, because the InfoSvnCommand argument is mishandled. Note: This has been disputed by multiple third parties as not being reproduceable and they argue this is not a valid vulnerability.",
+      "severity": "major",
+      "location": {
+        "path": "Python",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-40897 - setuptools - 57.5.0 - pypa-setuptools: Regular Expression Denial of Service (ReDoS) in package_index.py",
+      "fingerprint": "1b0291143855782ae7e5bdd5941597b62dddad09",
+      "content": "Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py.",
+      "severity": "major",
+      "location": {
+        "path": "Python",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2024-6345 - setuptools - 57.5.0 - pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools",
+      "fingerprint": "6c6fdd6f85ba2709bb5b0b173927f67c9fa1f9d5",
+      "content": "A vulnerability in the package_index module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.",
+      "severity": "major",
+      "location": {
+        "path": "Python",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2022-40898 - wheel - 0.37.0 - python-wheel: remote attackers can cause denial of service via attacker controlled input to wheel cli",
+      "fingerprint": "851ea85d3c8139748fa1135c85021febf1ebba67",
+      "content": "An issue discovered in Python Packaging Authority (PyPA) Wheel 0.37.1 and earlier allows remote attackers to cause a denial of service via attacker controlled input to wheel cli.",
+      "severity": "major",
+      "location": {
+        "path": "Python",
+        "lines": {
+          "begin": 0
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "container_scanning",
+      "categories": [ "Security" ],
+      "description": "CVE-2024-5569 - zipp - 3.6.0 - github.com/jaraco/zipp: Denial of Service (infinite loop) via crafted zip file in jaraco/zipp",
+      "fingerprint": "669ad7b7dc23408649cfcefe69c64305571a6b0c",
+      "content": "A Denial of Service (DoS) vulnerability exists in the jaraco/zipp library, affecting all versions prior to 3.19.1. The vulnerability is triggered when processing a specially crafted zip file that leads to an infinite loop. This issue also impacts the zipfile module of CPython, as features from the third-party zipp library are later merged into CPython, and the affected code is identical in both projects. The infinite loop can be initiated through the use of functions affecting the `Path` module in both zipp and zipfile, such as `joinpath`, the overloaded division operator, and `iterdir`. Although the infinite loop is not resource exhaustive, it prevents the application from responding. The vulnerability was addressed in version 3.19.1 of jaraco/zipp.",
+      "severity": "minor",
+      "location": {
+        "path": "Python",
+        "lines": {
+          "begin": 0
+        }
+      }
+    }
+]
