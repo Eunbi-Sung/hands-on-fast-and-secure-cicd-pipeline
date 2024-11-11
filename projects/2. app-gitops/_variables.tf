@@ -10,5 +10,5 @@ variable "url" {
 
 variable "gitlab_token" {
   type = string
-  default = "glpat-"
+  default = ""
 }
