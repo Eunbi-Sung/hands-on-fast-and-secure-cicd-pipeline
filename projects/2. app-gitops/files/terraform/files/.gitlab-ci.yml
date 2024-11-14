@@ -98,7 +98,8 @@ trivy:
     - wget --no-verbose https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.tar.gz -O - | tar -zxvf -
     - apk update && apk add jq
   script:
-    - ./trivy image --download-db-only --insecure --no-progress --cache-dir .trivycache/
+    - ./trivy image --exit-code 0 --cache-dir .trivycache/ --no-progress --severity LOW alpine:latest
+    - ./trivy image --download-db-only --no-progress --cache-dir .trivycache/
     - ./trivy image --exit-code 0 --cache-dir .trivycache/ --no-progress --format template --template "@contrib/gitlab-codequality.tpl" -o gl-codequality-image.json ${REMOTE_LATEST_IMAGE}
     - ./trivy filesystem --scanners misconfig,vuln --exit-code 0 --cache-dir .trivycache/ --no-progress --format template --template "@contrib/gitlab-codequality.tpl" -o gl-codequality-fs.json .
     - jq -s 'add' gl-codequality-image.json gl-codequality-fs.json > gl-codequality.json

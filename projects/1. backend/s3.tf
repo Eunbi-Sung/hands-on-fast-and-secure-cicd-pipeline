@@ -1,4 +1,4 @@
 resource "aws_s3_bucket" "this" {
-  bucket_prefix = "hands-on-cicd-pipeline-"
+  bucket_prefix = "gitops-backend-"
   force_destroy = true
 }
