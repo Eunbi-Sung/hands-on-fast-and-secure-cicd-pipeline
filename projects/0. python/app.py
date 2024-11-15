@@ -5,12 +5,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "12312321111111111121"
+    return "root~S2"
 
 
-@app.route("/rextest")
+@app.route("/ebsung")
 def rextest():
-    return "rextest"
+    return "ebsung~S2"
 
 
 if __name__ == "__main__":
