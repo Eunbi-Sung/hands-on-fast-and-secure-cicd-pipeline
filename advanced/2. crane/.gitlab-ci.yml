@@ -83,7 +83,7 @@
 
 .sign-container-image:
   stage: sign
-  image: registry.gitlab.com/7424069/images:crane
+  image: registry.gitlab.com/ebsung/images:crane
   before_script:
     - *get_ecr_token_using_crane
     - export IMAGE_DIGEST=${REMOTE_LATEST_IMAGE}@$(crane digest ${REMOTE_LATEST_IMAGE})
@@ -99,7 +99,7 @@
 
 .verify-container-image:
   stage: verify
-  image: registry.gitlab.com/7424069/images:crane
+  image: registry.gitlab.com/ebsung/images:crane
   before_script:
     - *get_ecr_token_using_crane
     - export IMAGE_DIGEST=${REMOTE_LATEST_IMAGE}@$(crane digest ${REMOTE_LATEST_IMAGE})

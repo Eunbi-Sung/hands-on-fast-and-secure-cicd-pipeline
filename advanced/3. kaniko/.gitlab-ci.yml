@@ -1,6 +1,6 @@
 .build-container-image:
   stage: build
-  image: registry.gitlab.com/7424069/images:kaniko
+  image: registry.gitlab.com/ebsung/images:kaniko
   before_script:
     -  mkdir -p /kaniko/.docker
     -  echo "{\"credsStore\":\"ecr-login\"}" > /kaniko/.docker/config.json
